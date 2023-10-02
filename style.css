@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 90 px 20px 0;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 28px;
+    color: #A950A1;
+}
+
+.header {
+    background-color: #000;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-contenido {
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    filter: brightness(300%);
+    overflow: hidden;
+}
+
+.txt{
+    color: #fff;
+    background: #000;
+    font-size: 60px;
+    font-weight: bold;
+}
+.txt:before{
+    content: 'animeflv';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(2px);
+}
+.txt_gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    background: linear-gradient(114.5793141156962deg, 
+                rgb(6, 112, 250) 4.927083333333334%,
+                rgb(255, 0, 64) 97.84374999999999%);
+}
+.txt_dodge{
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    background: radial-gradient(circle,white,black 35%) 
+                right / 25% 25%;
+    animation: neon 3s linear infinite;
+}
+@keyframes neon{
+    to{
+        transform: translate(50%, 50%);
+    }
+}
+
+.contenedor {
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn {
+    border: 3px solid rgba(100,100,100,0.1);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 300%;
+    width: 140px;
+}
+
+input {
+	font:inherit;
+}
+
+section {
+    display: inline-flex;
+	align-items: center;
+}
+
+form > div {
+	display: flex;
+	background:#fff;
+	padding: 9px 22px 9px 26px;
+	border-radius: 30px;
+	border:2px solid #cad3dc;
+}
+
+form input {
+	border:none;
+	background: transparent;
+	font-weight: bold;
+	padding-left: 24px;
+	background-image: url(https://image.flaticon.com/icons/png/512/116/116836.png);
+	background-size: 16px;
+	background-repeat: no-repeat;
+	width: 0px;
+	transition: all 1s;
+}
+
+form input:focus {
+	outline: none;
+	width: 300px;
+}
+
+div.galeria {
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px 0 lightcoral, 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+
+div.galeria:hover {
+    border: 1px solid #A950A1;
+    transform: rotate(-3deg);
+}
+
+div.pie {
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    padding: 10px;
+}
